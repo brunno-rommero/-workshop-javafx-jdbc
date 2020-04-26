@@ -6,18 +6,41 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.VBox?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+<ScrollPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
    <content>
-      <VBox prefHeight="344.0" prefWidth="464.0">
+      <VBox prefHeight="373.0" prefWidth="496.0">
          <children>
             <MenuBar>
               <menus>
                 <Menu mnemonicParsing="false" text="Cadastro">
                   <items>
+                        <MenuItem mnemonicParsing="false" text="Usuário" />
                     <MenuItem fx:id="menuItemFuncionario" mnemonicParsing="false" onAction="#onMenuItemFuncionario" text="Funcionário" />
                         <MenuItem fx:id="menuItemDepartamento" mnemonicParsing="false" onAction="#onMenuItemDepartamento" text="Departamento" />
+                        <MenuItem mnemonicParsing="false" text="Veículo" />
+                        <MenuItem mnemonicParsing="false" text="Motorista" />
+                        <MenuItem mnemonicParsing="false" text="Fornecedor" />
                   </items>
                 </Menu>
+                  <Menu mnemonicParsing="false" text="Viagem">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Fechamento de viagem" />
+                        <MenuItem mnemonicParsing="false" text="Fretes a receber" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Caixa" />
+                  <Menu mnemonicParsing="false" text="Contas">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Pagar" />
+                        <MenuItem mnemonicParsing="false" text="Receber" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Relatórios">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Mov. de Caixa" />
+                        <MenuItem mnemonicParsing="false" text="Resumo de Viagens" />
+                    </items>
+                  </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                   <items>
                     <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" onAction="#onMenuItemAbout" text="About" />

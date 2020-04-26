@@ -25,16 +25,22 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import model.dao.DaoFactory;
+import model.dao.DepartmentDao;
 import model.entities.Department;
 import model.services.DepartmentService;
 
 public class DepartmentListController implements Initializable, DataChangeListener {
 
 	private DepartmentService service;
+	
+	@FXML
+	private TextField txtFindByDesc;
 
 	@FXML
 	private TableView<Department> tableViewDepartment;
@@ -55,6 +61,12 @@ public class DepartmentListController implements Initializable, DataChangeListen
 	private Button btNew;
 
 	private ObservableList<Department> obsList;
+	
+	@FXML
+	public void onBtFiltrarAction() {
+		System.out.println("Implementar buscar ao digitar ");
+		 
+	}
 
 	@FXML
 	public void onBtNewAction(ActionEvent event) {

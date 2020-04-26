@@ -137,6 +137,7 @@ public class SellerDaoJDBC implements SellerDao {
 		}
 	}
 
+
 	private Seller instantiateSeller(ResultSet rs, Department dep) throws SQLException {
 		Seller obj = new Seller();
 		obj.setId(rs.getInt("Id"));
